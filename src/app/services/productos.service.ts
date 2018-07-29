@@ -34,11 +34,12 @@ export class ProductosService {
                     // Obtener respueta
                     this.infoProductos = resp;
                     // console.log(resp);
-                    // Agregar un timeout para que dure más tiempo
-                    setTimeout(() => {
-                        this.cargando = false;
-                        resolve();
-                    }, 2000);
+                    this.cargando = false;
+                    // // Agregar un timeout para que dure más tiempo
+                    // setTimeout(() => {
+                    //     this.cargando = false;
+                    //     resolve();
+                    // }, 2000);
                 }
             );
         });
