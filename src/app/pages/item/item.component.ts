@@ -21,9 +21,9 @@ export class ItemComponent implements OnInit {
     // Leer el parametro de entrada en la URL
     this.route.params.subscribe( parametros => {
       // Imprime todo el objeto
-      console.log(parametros);
+      // console.log(parametros);
       // Imprime solo un elemento
-      console.log(parametros['id']);
+      // console.log(parametros['id']);
       this.productoID = parametros['id'];
       this._infoProducto.getProducto(parametros['id']).subscribe( (producto: ProductoDetallado) => {
         console.log(producto);

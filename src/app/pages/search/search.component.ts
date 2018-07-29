@@ -14,9 +14,9 @@ export class SearchComponent implements OnInit {
     // Leer el parametro de entrada en la URL
     this.route.params.subscribe( parametros => {
         // Imprime todo el objeto
-        console.log(parametros);
+        // console.log(parametros);
         // Imprime solo un elemento
-        console.log(parametros['termino']);
+        // console.log(parametros['termino']);
         this._infoProductos.buscarProductos(parametros['termino']);
       });
   }
