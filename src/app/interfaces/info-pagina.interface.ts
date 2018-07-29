@@ -14,3 +14,12 @@ export interface InfoPagina {
   tumblr?: string;
   equipo_trabajo?: any[];
 }
+
+// Nueva interfaz para la info del Equipo
+export interface InfoEquipo {
+  frase?: string;
+  nombre?: string;
+  subtitulo?: string;
+  twitter?: string;
+  url?: string;
+}
