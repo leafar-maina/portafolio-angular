@@ -13,7 +13,7 @@ export class InfoPaginaService {
     info: InfoPagina = {};
     cargada = false;
     // En este caso se hace la declaracion con any[] porque el *ngFor solo recorre arreglos, no objetos
-    infoEquipo: any[] = [];
+    infoEquipo: InfoEquipo[] = [];
 
     constructor( private http: HttpClient ) {
         // console.log('Servicio cargado');
@@ -45,7 +45,7 @@ export class InfoPaginaService {
         // Leer el archivo JSON
         this.http.get('https://angular-html-be7ff.firebaseio.com/equipo.json').subscribe(
             // Se coloca el tipo Interface InfoEquipo a la respuesta para poder acceder a sus objetos
-            (resp: any[]) => {
+            (resp: InfoEquipo[]) => {
                 // Obtener respueta
                 this.infoEquipo = resp;
                 console.log(resp);
