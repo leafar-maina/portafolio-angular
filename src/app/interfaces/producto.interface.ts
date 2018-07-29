@@ -4,3 +4,13 @@ export interface Producto {
     titulo: string;
     url: string;
 }
+
+export interface ProductoDetallado {
+  categoria: string;
+  desc1: string;
+  desc2: string;
+  producto: string;
+  resumen: string;
+  subtitulo1: string;
+  subtitulo2: string;
+}

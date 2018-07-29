@@ -34,7 +34,7 @@ export class InfoPaginaService {
                 this.cargada = true;
                 // Obtener respueta
                 this.info = resp;
-                console.log(resp);
+                // console.log(resp);
                 // console.log(resp['twitter']);
             }
         );
@@ -48,7 +48,7 @@ export class InfoPaginaService {
             (resp: InfoEquipo[]) => {
                 // Obtener respueta
                 this.infoEquipo = resp;
-                console.log(resp);
+                // console.log(resp);
                 // console.log(resp['twitter']);
             }
         );
